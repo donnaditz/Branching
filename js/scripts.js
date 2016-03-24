@@ -6,4 +6,13 @@ $(document).ready(function() {
   } else {
     $('#rabbit').show();
   };
+
+  var heightOk = parseInt(prompt("How tall are you? In Inches?"));
+
+  if (heightOk <= 60) {
+    $("#ok-to-ride").show();
+  } else {
+    $("#too-tall").show();
+  };
+
 });
